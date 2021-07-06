@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import mushrooms from './mushrooms.js';
 
 // initialize state
 

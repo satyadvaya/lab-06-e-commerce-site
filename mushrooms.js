@@ -4,8 +4,7 @@ const chanterelle = {
     image: 'chanterelle.jpeg',
     description: 'Orange, yellow, or white',
     category: 'fruity aroma',
-    price: 18,
-    cost: 30
+    price: 18
 };
 
 const hedgehog = {
@@ -14,8 +13,7 @@ const hedgehog = {
     image: 'hedgehog.jpeg',
     description: 'Yellow, orange, or brown',
     category: 'pleasant aroma',
-    price: 27,
-    cost: 45
+    price: 27
 };
 
 const matsutake = {
@@ -24,8 +22,7 @@ const matsutake = {
     image: 'matsutake.jpeg',
     description: 'Brownish-yellow',
     category: 'spicy aroma',
-    price: 36,
-    cost: 60
+    price: 36
 };
 
 const lobster = {
@@ -34,8 +31,7 @@ const lobster = {
     image: 'lobster.jpeg',
     description: 'Red or orange',
     category: 'Seafood-like aroma',
-    price: 24,
-    cost: 40
+    price: 24
 };
 
 const morrel = {
@@ -44,8 +40,7 @@ const morrel = {
     image: 'morrel.jpeg',
     description: 'Brownish-orange',
     category: 'Earthy aroma',
-    price: 30,
-    cost: 50
+    price: 30
 };
 
 
@@ -55,6 +50,7 @@ const truffle = {
     image: 'truffle.jpeg',
     description: 'White or black',
     category: 'Musky aroma',
-    price: 33,
-    cost: 55
+    price: 33
 };
+
+export default mushrooms;
