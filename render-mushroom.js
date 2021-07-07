@@ -1,5 +1,6 @@
 export function renderMushroom(mushroom) {
     const mushroomLi = document.createElement('li');
+
     const mushroomH3 = document.createElement('h3');
     mushroomH3.textContent = mushroom.name;
 
@@ -7,11 +8,11 @@ export function renderMushroom(mushroom) {
     mushroomImg.src = `./assets/${mushroom.image}`;
     mushroomImg.alt = mushroom.name;
 
-    const mushroomSpan = document.createElement('span');
-    mushroomSpan.textContent = `$${mushroomSpan.price}`;
-
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
+
+    const mushroomSpan = document.createElement('span');
+    mushroomSpan.textContent = `$${mushroomSpan.price}`;
 
     mushroomLi.appendChild(mushroomH3);
     mushroomLi.appendChild(mushroomImg);

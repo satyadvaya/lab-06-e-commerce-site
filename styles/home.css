@@ -1,1 +1,33 @@
 /* add home page styles here */
+#mushrooms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mushrooms li {
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#mushrooms li h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#mushrooms li img {
+    width: 100px;
+}
+
+#mushrooms h3 {
+    margin-top: 1px;
+}
+
+#mushrooms img, span {
+     display: block;
+     padding-bottom: 10px;
+}

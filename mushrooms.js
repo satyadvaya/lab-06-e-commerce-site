@@ -1,7 +1,7 @@
 const chanterelle = {
     id: 'chanterelle',
     name: 'Chanterelle',
-    image: 'chanterelle.jpeg',
+    image: 'chanterelle.png',
     description: 'Orange, yellow, or white',
     category: 'fruity aroma',
     price: 18
@@ -10,7 +10,7 @@ const chanterelle = {
 const hedgehog = {
     id: 'hedgehog',
     name: 'Hedgehog',
-    image: 'hedgehog.jpeg',
+    image: 'hedgehog.png',
     description: 'Yellow, orange, or brown',
     category: 'pleasant aroma',
     price: 27
@@ -19,7 +19,7 @@ const hedgehog = {
 const matsutake = {
     id: 'matsutake',
     name: 'Matsutake',
-    image: 'matsutake.jpeg',
+    image: 'matsutake.png',
     description: 'Brownish-yellow',
     category: 'spicy aroma',
     price: 36
@@ -28,7 +28,7 @@ const matsutake = {
 const lobster = {
     id: 'lobster',
     name: 'Lobster',
-    image: 'lobster.jpeg',
+    image: 'lobster.png',
     description: 'Red or orange',
     category: 'Seafood-like aroma',
     price: 24
@@ -37,7 +37,7 @@ const lobster = {
 const morrel = {
     id: 'morrel',
     name: 'Morrel',
-    image: 'morrel.jpeg',
+    image: 'morrel.png',
     description: 'Brownish-orange',
     category: 'Earthy aroma',
     price: 30
@@ -47,7 +47,7 @@ const morrel = {
 const truffle = {
     id: 'truffle',
     name: 'Truffle',
-    image: 'truffle.jpeg',
+    image: 'truffle.png',
     description: 'White or black',
     category: 'Musky aroma',
     price: 33
