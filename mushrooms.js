@@ -53,4 +53,13 @@ const truffle = {
     price: 33
 };
 
+const mushrooms = [
+    chanterelle,
+    hedgehog,
+    matsutake,
+    lobster,
+    morrel,
+    truffle
+];
+
 export default mushrooms;

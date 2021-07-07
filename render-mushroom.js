@@ -1,4 +1,4 @@
-export function renderMushrooms(mushroom) {
+export function renderMushroom(mushroom) {
     const mushroomLi = document.createElement('li');
     const mushroomH3 = document.createElement('h3');
     mushroomH3.textContent = mushroom.name;
