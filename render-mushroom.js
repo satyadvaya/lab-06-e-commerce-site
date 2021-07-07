@@ -12,7 +12,7 @@ export function renderMushroom(mushroom) {
     button.textContent = 'Add to Cart';
 
     const mushroomSpan = document.createElement('span');
-    mushroomSpan.textContent = `$${mushroomSpan.price}`;
+    mushroomSpan.textContent = `$${mushroom.price}`;
 
     mushroomLi.appendChild(mushroomH3);
     mushroomLi.appendChild(mushroomImg);

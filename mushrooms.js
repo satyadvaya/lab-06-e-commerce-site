@@ -1,5 +1,5 @@
 const chanterelle = {
-    id: 'chanterelle',
+    id: 1,
     name: 'Chanterelle',
     image: 'chanterelle.png',
     description: 'Orange, yellow, or white',
@@ -8,7 +8,7 @@ const chanterelle = {
 };
 
 const hedgehog = {
-    id: 'hedgehog',
+    id: 2,
     name: 'Hedgehog',
     image: 'hedgehog.png',
     description: 'Yellow, orange, or brown',
@@ -17,7 +17,7 @@ const hedgehog = {
 };
 
 const matsutake = {
-    id: 'matsutake',
+    id: 3,
     name: 'Matsutake',
     image: 'matsutake.png',
     description: 'Brownish-yellow',
@@ -26,7 +26,7 @@ const matsutake = {
 };
 
 const lobster = {
-    id: 'lobster',
+    id: 4,
     name: 'Lobster',
     image: 'lobster.png',
     description: 'Red or orange',
@@ -35,7 +35,7 @@ const lobster = {
 };
 
 const morrel = {
-    id: 'morrel',
+    id: 5,
     name: 'Morrel',
     image: 'morrel.png',
     description: 'Brownish-orange',
@@ -45,7 +45,7 @@ const morrel = {
 
 
 const truffle = {
-    id: 'truffle',
+    id: 6,
     name: 'Truffle',
     image: 'truffle.png',
     description: 'White or black',
