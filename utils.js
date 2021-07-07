@@ -8,3 +8,15 @@ export function findById(items, id) {
         }
     }
 }
+
+export function calcItemTotal(mushrooms, cart) {
+    let orderTotal = 0;
+    // loop through the cart items
+    for (let item of cart) {
+        const mushroom = findById(mushrooms, item.id);
+        orderTotal += mushroom.price * item.qty;
+    }
+    // return the orderTotal
+    return orderTotal;
+}
+
