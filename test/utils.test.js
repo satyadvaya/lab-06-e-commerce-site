@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById, calcItemTotal, toUSD, renderTableRow } from '../utils.js';
+import { findById, calcItemTotal, renderTableRow } from '../utils.js';
 import mushrooms from '../data/mushrooms.js';
 
 const test = QUnit.test;
@@ -29,27 +29,28 @@ test('returns mushrooms by id', (expect) => {
 test('calcItemTotal should return the total amount in the cart', expect => {
     //Arrange
     // Set up your arguments and expectations
-    const data = [{
-        id: 4,
-        price: 24
-    },
-    {
-        id: 6,
-        price: 33
-    }];
+    const data = [
+        { id: 4, price: 24 },
+        { id: 6, price: 33 }];
+
     const cart = [
         { id: 4, qty: 5 },
-        { id: 6, qty: 7 }
-    ];
+        { id: 6, qty: 7 }];
+
+    const expected = 351;
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const expected = 351;
     const actual = calcItemTotal(data, cart);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
     expect.equal(expected, actual);
 });
 
 test('renderTableRow returns a <tr> element', expect => {
+    //Arrange
+    // Set up your arguments and expectations
     const mushroom = {
         id: 5,
         name: 'Morrel',
@@ -62,9 +63,16 @@ test('renderTableRow returns a <tr> element', expect => {
         id: 5,
         qty: 8
     };
+
     const expected = `<tr><td>Morrel</td><td>$30.00</td><td>8</td><td>$240.00</td></tr>`;
+
+    //Act 
+    // Call the function you're testing and set the result to a const    
     const dom = renderTableRow(mushroom, cart);
     const html = dom.outerHTML;
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
     expect.equal(html, expected);
 });
 

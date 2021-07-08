@@ -1,0 +1,23 @@
+a {
+    padding-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+thead {
+    background-color: lightcoral;
+    font-weight: 800;
+}
+
+table th {
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    text-align: right;
+}
