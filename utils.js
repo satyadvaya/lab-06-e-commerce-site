@@ -20,3 +20,37 @@ export function calcItemTotal(mushrooms, cart) {
     return orderTotal;
 }
 
+export function toUSD(number) {
+    return number.toLocaleString(
+        'en-US', { style: 'currency', currency: 'USD' });
+}
+
+export function renderTableRow(mushroomItem, cartItem){
+    // return <tr> element with all the info we need
+    // <tr>
+    //     <td>Apple</td>  
+    //     <td>$1.00 (from fruits.js)</td>
+    //     <td>2 (from cart.js)</td>
+    //     <td>$4.00 (calculated)</td>
+    // </tr>
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    tdName.textContent = mushroomItem.name;
+    tr.appendChild(tdName);
+    
+    const tdPrice = document.createElement('td');
+    tdPrice.textContent = toUSD(mushroomItem.price);
+    tr.appendChild(tdPrice);
+    
+    const tdQty = document.createElement('td');
+    tdQty.textContent = cartItem.qty;
+    tr.appendChild(tdQty);
+
+    const tdTotal = document.createElement('td');
+    const total = mushroomItem.price * cartItem.qty;
+    tdTotal.textContent = toUSD(total);
+    tr.appendChild(tdTotal);
+
+    return tr;
+
+}
