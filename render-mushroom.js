@@ -10,6 +10,8 @@ export function renderMushroom(mushroom) {
 
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
+    button.value = mushroom.id;
+    button.classList.add('add');
 
     const mushroomSpan = document.createElement('span');
     mushroomSpan.textContent = `$${mushroom.price}`;
