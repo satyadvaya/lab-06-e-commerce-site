@@ -1,6 +1,7 @@
 import { findById, calcItemTotal, toUSD, renderTableRow } from '../utils.js';
 import mushrooms from '../data/mushrooms.js';
 import cart from '../data/cart.js';
+console.log(cart);
 
 const tableBody = document.getElementById('table-body');
 

@@ -52,5 +52,4 @@ export function renderTableRow(mushroomItem, cartItem){
     tr.appendChild(tdTotal);
 
     return tr;
-
 }
