@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import mushrooms from './mushrooms.js';
+import mushrooms from '../data/mushrooms.js';
 import { renderMushroom } from './render-mushroom.js';
 
 const mushroomsUl = document.getElementById('mushrooms');
