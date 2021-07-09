@@ -25,7 +25,7 @@ export function toUSD(number) {
         'en-US', { style: 'currency', currency: 'USD' });
 }
 
-export function renderTableRow(mushroomItem, cartItem){
+export function renderTableRow(mushroomItem, cartItem) {
     // return <tr> element with all the info we need
     // <tr>
     //     <td>Apple</td>  
@@ -52,4 +52,17 @@ export function renderTableRow(mushroomItem, cartItem){
     tr.appendChild(tdTotal);
 
     return tr;
+}
+
+export function getTotal(mushrooms, cart) {
+    let orderTotal = 0;
+    // // loop through the cart items
+    // // get the associated mushroom
+    // // sum up the qty * price
+    // // return the orderTotal
+    for (let item of cart) {
+        const mushroom = findById(mushrooms, item.id);
+        orderTotal += mushroom.price * item.qty;
+    }
+    return orderTotal;
 }
