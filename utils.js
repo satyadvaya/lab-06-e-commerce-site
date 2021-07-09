@@ -26,13 +26,7 @@ export function toUSD(number) {
 }
 
 export function renderTableRow(mushroomItem, cartItem) {
-    // return <tr> element with all the info we need
-    // <tr>
-    //     <td>Apple</td>  
-    //     <td>$1.00 (from fruits.js)</td>
-    //     <td>2 (from cart.js)</td>
-    //     <td>$4.00 (calculated)</td>
-    // </tr>
+ 
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     tdName.textContent = mushroomItem.name;
@@ -56,13 +50,13 @@ export function renderTableRow(mushroomItem, cartItem) {
 
 export function getTotal(mushrooms, cart) {
     let orderTotal = 0;
-    // // loop through the cart items
-    // // get the associated mushroom
-    // // sum up the qty * price
-    // // return the orderTotal
+    // loop through the cart items
     for (let item of cart) {
+        // get the associated mushroom
         const mushroom = findById(mushrooms, item.id);
+        // sum up the qty * price
         orderTotal += mushroom.price * item.qty;
     }
+    // return the orderTotal
     return orderTotal;
 }

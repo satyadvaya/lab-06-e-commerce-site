@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById, calcItemTotal, renderTableRow } from '../utils.js';
+import { findById, calcItemTotal, renderTableRow, getTotal } from '../utils.js';
 import mushrooms from '../data/mushrooms.js';
 
 const test = QUnit.test;
@@ -75,6 +75,21 @@ test('renderTableRow returns a <tr> element', expect => {
     // Make assertions about what is expected versus the actual result
     expect.equal(html, expected);
 });
+
+test('getTotal should return the total amount in the cart', expect => {
+    const data = [
+        { id: 4, price: 24 },
+        { id: 6, price: 33 }];
+
+    const cart = [
+        { id: 4, qty: 5 },
+        { id: 6, qty: 7 }];
+
+    const expected = 351;
+    const actual = getTotal(data, cart);
+    expect.equal(expected, actual);
+});
+
 
 test('time to test a function', (expect) => {
     //Arrange

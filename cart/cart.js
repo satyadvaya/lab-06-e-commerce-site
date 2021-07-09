@@ -13,7 +13,7 @@ const tableBody = document.getElementById('table-body');
 
 function renderCart(){
     const cart = getCart();
-    console.log("cart inside renderCart", cart);
+    // console.log("cart inside renderCart", cart);
     for (let item of cart) {
         const mushroom = findById(mushrooms, item.id);
         const tr = renderTableRow(mushroom, item);
