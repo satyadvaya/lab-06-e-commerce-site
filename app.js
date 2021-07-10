@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 import mushrooms from './data/mushrooms.js';
 import { renderMushroom } from './render-mushroom.js';
+import { addItemtoCart } from './storage-utils.js';
 
 const mushroomsUl = document.getElementById('mushrooms');
 
@@ -21,9 +22,9 @@ for (let mushroom of mushrooms) {
 const addButtons = document.querySelectorAll('.add');
 for (let button of addButtons) {
     button.addEventListener('click', (e) => {
-        console.log("i am clicking button", e.target.value);
-        console.log(typeof(e.target.value));
+        // console.log("i am clicking button", e.target.value);
+        // console.log(typeof(e.target.value));
         // e.target.value is a string, we need our IDs to be numbers
-        // addItemtoCart(Number(e.target.value));
+        addItemtoCart(Number(e.target.value));
     });
 }
