@@ -23,7 +23,6 @@ export function addItemtoCart(itemId){
     // get the cart from localstorage
     const cart = getCart();
     const item = findById(cart, itemId);
-    console.log(item);
     
     if (item) {
         // if the item already exists
@@ -35,7 +34,7 @@ export function addItemtoCart(itemId){
         const lineItem = { id: itemId, qty: 1 };
         cart.push(lineItem);
     }    
-    console.log(cart);
+
     // set cart back to localstorage
     setCart(cart);
 }
